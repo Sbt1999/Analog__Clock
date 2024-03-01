@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#clockContainer{
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10px;
+    background:url(clock.png) no-repeat;
+    background-size: 100%;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background:black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    width: 2%;
+    height: 28%;
+    top: 21.5%;
+    left: 48.8%;
+    opacity: 0.8;
+}
+#minute{
+    width: 1.8%;
+    height: 36.5%;
+    top: 13.2%;
+    left: 48.8%;
+    opacity: 0.8;
+}
+#second{
+    width: 0.4%;
+    height: 36.5%;
+    top: 13.2%;
+    left: 49.5%;
+    opacity: 0.8;
+}
+.head{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:8px 15px;
+    font-size: 20px;
+    font-family: 'Secular One', sans-serif;
+    margin-top: 15px;
+    background-color: rgb(120, 222, 253);
+}
+@media (max-width: 400px){
+    .head{
+        background-color: rgb(120, 222, 253);
+        margin-top: 20px;
+        font-size: 15px
+    }
+}
